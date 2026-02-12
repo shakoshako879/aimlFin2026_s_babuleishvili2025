@@ -6,7 +6,7 @@ In this report, I detail the steps taken to analyze the web server log file for 
 The log file contains entries from a web server, including timestamps, which I parsed to aggregate request counts over time. I then applied linear regression to identify anomalous periods.
 
 ## Data Source
-The event log file used for this analysis can be found at: [Event Log File](https://github.com/shakoshako879/aimlFin2026_s_babuleishvili2025/task_3/s_babuleishvili25_67893_server.log)
+The event log file used for this analysis can be found at: [Event Log File](https://github.com/shakoshako879/aimlFin2026_s_babuleishvili2025/blob/main/task_3/s_babuleishvili25_67893_server.log)
 
 ## Methodology
 ### Step 1: Parsing the Log File
@@ -114,4 +114,5 @@ No other intervals showed such significant deviations.
 2. Install required libraries: `pip install pandas statsmodels matplotlib` (though in the environment, they are pre-installed).
 3. Run the code fragments in sequence in a Python script or Jupyter notebook.
 4. The outliers will be printed, and plots saved as PNG files.
+
 5. Adjust the residual threshold if needed (I used >3 for strict outlier detection).
